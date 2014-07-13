@@ -8,7 +8,7 @@ using System.Text;
 namespace GettingStartedLib
 {
   // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in both code and config file together.
-  public class Calculator : ICalculator
+  public class CalculatorService : ICalculator
   {
     public double Add(double n1, double n2)
     {
