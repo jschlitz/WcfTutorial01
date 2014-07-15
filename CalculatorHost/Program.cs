@@ -30,13 +30,13 @@ namespace CalculatorHost
         smb.MetadataExporter.PolicyVersion = PolicyVersion.Policy15;
         selfHost.Description.Behaviors.Add(smb);
         
-        //var foo =selfHost.AddDefaultEndpoints();
+        var foo =selfHost.AddDefaultEndpoints();
 
-        //foreach (var item in foo)
-        //{
-        //  Console.WriteLine("----------");
-        //  Console.WriteLine(item.Address.ToString());
-        //}
+        foreach (var item in foo)
+        {
+          Console.WriteLine("----------");
+          Console.WriteLine(item.Address.ToString());
+        }
 
         //begin
         selfHost.Open();
