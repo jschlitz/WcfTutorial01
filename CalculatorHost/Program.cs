@@ -29,7 +29,8 @@ namespace CalculatorHost
         smb.HttpGetEnabled = true;
         smb.MetadataExporter.PolicyVersion = PolicyVersion.Policy15;
         selfHost.Description.Behaviors.Add(smb);
-        
+
+        //Not clear if this is necessary, or if it just takes a long time for http://localhost:8000/GettingStarted to become ready
         var foo =selfHost.AddDefaultEndpoints();
 
         foreach (var item in foo)
